@@ -1,0 +1,60 @@
+@use "../abstracts/variables";
+@use "../base/fonts";
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: variables.$font-family;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: variables.$primary-color;
+    font-size: 14px;
+
+    &:hover {
+        color: variables.$accent-color; // Изменение цвета при наведении
+    }
+}
+
+
+// Логотип
+.logo {
+    img {
+        width: 100px;
+        height: auto;
+    }
+
+    .text {
+        font-size: 16px;
+        font-weight: bold;
+        color: variables.$primary-color;
+        font-family: variables.$font-family;
+    }
+}
+
+// Корзина
+.cart {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+
+    &:hover {
+        color: greenyellow; // Цвет при наведении
+    }
+}
