@@ -1,7 +1,7 @@
 @use "../abstracts/variables";
 @use "../base/fonts";
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,52 +9,74 @@ header {
     background-color: #fff;
     border-bottom: 1px solid #e0e0e0;
     font-family: variables.$font-family;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    margin-right: 15px;
-}
-
-a {
-    text-decoration: none;
-    color: variables.$primary-color;
-    font-size: 14px;
-
-    &:hover {
-        color: variables.$accent-color; // Изменение цвета при наведении
-    }
-}
 
 
-// Логотип
-.logo {
-    img {
-        width: 100px;
-        height: auto;
+    &__nav {
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-right: 15px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: variables.$primary-color;
+                font-size: 14px;
+
+                &:hover {
+                    color: variables.$accent-color; // Изменение цвета при наведении
+                }
+            }
+        }
     }
 
-    .text {
-        font-size: 16px;
-        font-weight: bold;
-        color: variables.$primary-color;
-        font-family: variables.$font-family;
+
+    // Логотип
+    &__logo {
+        display: flex;
+        align-items: center;
+
+
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 8px; // Расстояние между логотипом и текстом
+        }
+
+        &-icon {
+            width: 16px;
+            height: 16px;
+            background-image: url('../img/logo.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+        &-text {
+            font-size: 16px;
+            font-weight: bold;
+            color: variables.$primary-color;
+            font-family: variables.$font-family;
+        }
     }
-}
 
-// Корзина
-.cart {
-    font-size: 20px;
-    color: #333;
-    cursor: pointer;
+    // Корзина
+    &__cart {
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
 
-    &:hover {
-        color: greenyellow; // Цвет при наведении
+        &:hover {
+            color: greenyellow; // Цвет при наведении
+        }
     }
 }
