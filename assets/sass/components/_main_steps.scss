@@ -1,0 +1,120 @@
+@use "../abstracts/variables";
+@use "../base/fonts";
+
+// Начало Расалина Блок 3 easy steps 
+.main__steps-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  max-width: 1216px;
+  max-height: 460px;
+  margin-left: 40px;
+  margin-right: 40px;
+
+  border-radius: 80px;
+  background-color: variables.$light-brown-color;
+}
+
+.steps_title{
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 44px;
+  max-width: 512px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  color: #141414;
+}
+
+.step_text{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  max-width: 349px;
+
+  font-family: 'DM Sans';
+}
+
+.main__steps_img{
+  max-width: 420px;
+  max-height: 420px;
+
+}
+
+@media screen and (max-width: 1020px) {
+  .main__steps_img{
+    max-width: 350px;
+    max-height: 350px;
+  }
+
+  .steps_title {
+    max-width: 274px;
+    max-height: 96px;
+    left: 390px;
+    top: 80px;
+
+    font-size: 28px;
+    line-height: 32px;
+
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  }
+
+  .step_text {
+    max-width: 240px;
+    max-height: 54px;
+    
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main__steps-block {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+
+    max-width: 331px;
+    max-height: 661px;
+
+    border-radius: 40px;
+    margin: auto;
+  }
+
+  .main__steps_img{
+    max-width: 258px;
+    max-height: 319px;
+  }
+
+  .steps_title {
+    max-width: 295px;
+    max-height: 56px;
+    left: 20px;
+    top: 40px;
+
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .step_text {
+    max-width: 230px;
+    max-height: 54px;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    letter-spacing: -0.04em;
+  }
+}
+
+// @media screen and (max-width: 375px) {
+//   .main__steps-block {
+//     display: flex;
+//   }
+// }
+// Конец  Расалина main-->
