@@ -2,18 +2,6 @@
 @use "../base/fonts";
 
 .main {
-<<<<<<< HEAD
-  display: flex;
-  flex-direction: row;
-  /*justify-content: space-around;*/
-  width: 100%;
-  height: 100%;
-  background-color: rgba(161, 196, 135, 1);
-  padding-top: 4vw;
-  padding-bottom: 2vw;
-  font-family: variables.$font-family;
-  }
-=======
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -25,7 +13,6 @@
     font-family: variables.$font-family;
 }
 
->>>>>>> a86766286e4805a573d4ab486c7713ba90ea1f48
 .italic {
     color: rgba(234, 247, 229, 1);
 }
@@ -35,19 +22,6 @@
 }
 
 .container-1 {
-<<<<<<< HEAD
-  display: flex;
-  flex-direction: column;
-  margin-left: 40px;
-  align-items: flex-start;
-  }
-.container-2 {
-  display: flex;
-  flex-direction: column;
-  margin-right: 1vw;
-  align-items: flex-end;
-  margin-left: 30%;
-=======
     display: flex;
     flex-direction: column;
 }
@@ -56,23 +30,9 @@
     display: flex;
     flex-direction: column;
     margin-right: 4vw;
->>>>>>> a86766286e4805a573d4ab486c7713ba90ea1f48
 }
 
 .button-round {
-<<<<<<< HEAD
-  background-color: rgba(250, 243, 231, 1);
-  font-family: variables.$font-family;
-  color: rgba(252, 138, 17, 1);
-  text-align: center;
-  border-radius: 100%;
-  width: 132px;
-  height: 132px;
-  font-size: 1.5rem;
-  border-color: rgba(250, 243, 231, 1);
-  margin-top: 1vw;
-  margin-bottom: 50px;
-=======
     background-color: rgba(250, 243, 231, 1);
     font-family: variables.$font-family;
     color: rgba(252, 138, 17, 1);
@@ -83,7 +43,6 @@
     font-size: 1.5rem;
     border-color: rgba(250, 243, 231, 1);
     margin-top: 1vw;
->>>>>>> a86766286e4805a573d4ab486c7713ba90ea1f48
 }
 
 .button-oval {
@@ -92,27 +51,15 @@
 }
 
 .title-1 {
-<<<<<<< HEAD
- font-family: variables.$font-family;
-  color: white;
-  font-size: 4.5rem;
-=======
     font-family: variables.$font-family;
     color: white;
     font-size: 4rem;
->>>>>>> a86766286e4805a573d4ab486c7713ba90ea1f48
 }
 
 .title-2 {
-<<<<<<< HEAD
-font-family: variables.$font-family;
-  color: white;
-  font-size: 0.9rem;
-=======
     font-family: variables.$font-family;
     color: white;
     font-size: 0.8rem;
->>>>>>> a86766286e4805a573d4ab486c7713ba90ea1f48
 }
 
 .group-of-buttons {
@@ -133,12 +80,8 @@ font-family: variables.$font-family;
     background-color: rgba(161, 196, 135, 1);
     width: 133px;
     height: 38px;
-<<<<<<< HEAD
-    }
-=======
 }
 
->>>>>>> a86766286e4805a573d4ab486c7713ba90ea1f48
 .button-oval-3 {
     background-color: rgba(161, 196, 135, 1);
     width: 115px;
@@ -152,13 +95,7 @@ font-family: variables.$font-family;
     height: 38px;
     margin-top: 10px;
 }
-<<<<<<< HEAD
-.girl{
-    width: 150%;
-    }
-=======
 
 .girl {
     width: 120%;
 }
->>>>>>> a86766286e4805a573d4ab486c7713ba90ea1f48
