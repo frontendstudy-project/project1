@@ -28,12 +28,13 @@ justify-content: space-around;
   align-items: flex-start;
   }
 .container-2 {
+    width: 35%;
   display: flex;
   flex-direction: column;
   margin-right: 1vw;
   align-items: flex-end;
-  margin-left: 30%;
-}
+  margin-left: 10%;
+  }
 
 .container-2 {
     display: flex;
