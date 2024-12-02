@@ -2,88 +2,175 @@
 @use "../base/fonts";
 
 // Начало Расалина Блок 3 easy steps 
+
+.step_wraper{
+  width: 100%;
+  height: 100%;
+  
+  margin-top: 100px;
+  
+  // display: flex;
+  // justify-content: center;
+  // // background-image: url('../img/back.png');
+  // // border-radius: 80px;
+  // // background-position: center;
+  // // margin-left: 40px;
+  // // margin-right: 40px;
+}
+
 .main__steps-block {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;;
 
-  max-width: 1216px;
+  max-width: 1790px;
   max-height: 460px;
   margin-left: 40px;
   margin-right: 40px;
-
+  
   border-radius: 80px;
-  background-color: variables.$light-brown-color;
+  background-image: url('../img/back.png');
+  background-position: center;
+  background-size: cover;
 }
 
-.steps_title{
+.steps_title {
+  display: flex;
+  align-items: center;
+  max-width: 512px;
+
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 44px;
-  max-width: 512px;
-
-  display: flex;
-  align-items: center;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-
   color: #141414;
 }
 
 .step_text{
   display: flex;
   flex-direction: row;
-  align-items: center;
+  max-width: 390px;
   gap: 14px;
-  max-width: 349px;
-
+  margin-bottom: 25px;
+  
   font-family: 'DM Sans';
+  font-size: 14px;
+  align-items: center;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+}
+
+.text_2 {
+  max-width: 220px;
+  height: 36px;
+}
+
+.text_3 {
+  max-width: 350px;
+  height: 36px;
 }
 
 .main__steps_img{
   max-width: 420px;
   max-height: 420px;
-
 }
 
-@media screen and (max-width: 1020px) {
-  .main__steps_img{
-    max-width: 350px;
-    max-height: 350px;
+// скидки
+.discount_wrapper{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+
+  width: 100%;
+  height: 130px;
+
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+
+.text_discount {
+  width: 100%;
+  padding-left: 30px;
+
+  font-family: variables.$font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  color: #F9F7F4;
+}
+.steps-italic{
+  font-style: italic;
+  font-weight: 400;
+}
+
+.div_discount_orange {
+  background: #FC8A11;
+  transform: rotate(3deg);
+}
+
+.div_discount_green {
+  position: absolute;
+top: 1610px;
+transform: rotate(-2deg);
+background: #A1C487;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .main__steps-block {
+    max-width: 704px;
+    max-height: 488px;
+    margin-top: 100px;
+    border-radius: 80px;
   }
 
   .steps_title {
-    max-width: 274px;
+    max-width: 294px;
     max-height: 96px;
-    left: 390px;
-    top: 80px;
+    margin-top: 0px;
 
     font-size: 28px;
     line-height: 32px;
-
-    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   }
 
   .step_text {
     max-width: 240px;
     max-height: 54px;
-    
+  }
+
+  .text_3 {
+    max-width: 250px;
+    margin-top: 32px;
   }
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 760px) {
+
+  .step_wraper{
+    margin-top: 60px;
+  }
+
   .main__steps-block {
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
 
-    max-width: 331px;
+    max-width: 335px;
     max-height: 661px;
-
-    border-radius: 40px;
     margin: auto;
+
+
+    background-image: url('../img/blocks-mobile.png');
+    background-size: cover;
+    border-radius: 40px;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.20);
   }
 
   .main__steps_img{
@@ -94,17 +181,21 @@
   .steps_title {
     max-width: 295px;
     max-height: 56px;
-    left: 20px;
-    top: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    border-radius: 50px;
 
     font-size: 24px;
     line-height: 28px;
   }
 
   .step_text {
+  
     max-width: 230px;
     max-height: 54px;
-
+    margin-bottom: 20px;
+    
     font-size: 14px;
     line-height: 18px;
 
@@ -112,9 +203,4 @@
   }
 }
 
-// @media screen and (max-width: 375px) {
-//   .main__steps-block {
-//     display: flex;
-//   }
-// }
 // Конец  Расалина main-->
