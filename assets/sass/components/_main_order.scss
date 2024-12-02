@@ -1,0 +1,88 @@
+@use "../abstracts/variables";
+@use "../base/fonts";
+
+
+//Начало  Блок main Ann To order your vegetable
+.main-order {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 1216px;
+    height: 306px;
+    margin: 0 auto;
+    font-family: variables.$font-family;
+    background-color: transparent;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  
+    @media (max-width: 1216px) {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      padding: 10px;
+    }
+  }
+  
+  .order {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-right: 100px;
+  }
+  
+  .order-title {
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'DM Sans';
+    font-style: normal;
+    max-width: 550px;
+    color: #141414;
+    margin-bottom: 40px;
+  }
+  
+  .order-texts {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .order-text {
+    width: 70%;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+  
+    &.left {
+      text-align: left;
+      max-width: 300px;
+      margin-right: 50px;
+    }
+  
+    &.right {
+      text-align: left;
+      max-width: 250px;
+    }
+  }
+  
+  .main-order-img {
+    width: auto;
+    height: auto; 
+    margin: 0; 
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    margin-top: 30px;
+  
+    img {
+      width: 410px; 
+      height: auto;
+      object-fit: contain;
+      border-radius: 20px;
+    }
+    
+    @media (max-width: 768px) {
+      img {
+        width: 100px;
+      }
+    }
+  }
+  // Конец  Блок main Ann To order your vegetable-->

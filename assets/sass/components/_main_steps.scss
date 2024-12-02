@@ -23,15 +23,16 @@
   align-items: center;
   justify-content: space-evenly;;
 
-  max-width: 1790px;
-  max-height: 460px;
-  margin-left: 40px;
-  margin-right: 40px;
-  
-  border-radius: 80px;
-  background-image: url('../img/back.png');
-  background-position: center;
-  background-size: cover;
+text-shadow:0px 4px 70px 0px rgba(0,0,0,.1);
+font-size:24px;
+font-style:normal;
+font-weight:500;
+line-height:1.16;
+letter-spacing:-.96px;
+text-transform:uppercase;
+text-align:start;
+margin-bottom:40px
+
 }
 
 .steps_title {
