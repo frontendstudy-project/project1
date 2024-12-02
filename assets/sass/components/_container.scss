@@ -1,0 +1,60 @@
+@use "../abstracts/variables";
+@use "../base/fonts";
+
+.harvestbox {
+  width: 100%;
+  min-height: 536px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: variables.$font-family;
+
+
+  &__block {
+      display: flex;
+      flex-direction: column;
+      margin-left: 150px;
+      padding-right: 100px;
+
+      &__block-text {
+          font-size: 35px;
+          text-transform: uppercase;
+          font-weight: bold;
+          margin-top: 60px;
+        }
+
+        &__block-text1{
+          font-size: 18px;
+          margin-top: 30px;
+        }
+
+                .input-button-container {
+                  background-color: transparent;
+                  width: 50%;
+                  margin-top: 40px;
+                  /* margin-left: 20px; */
+                  display: flex;
+                  border: 2px solid #a5a2a2c9;
+                  border-radius: 40px;
+                }
+        
+                .input-button-container input {
+                  flex-grow: 1;
+                  margin-left: 20px;
+                  border: none;
+                }
+        
+                .input-button-container button {
+                  background:variables.$orange-color;
+                  color: #f0f8ff;
+                  border: none;
+                  cursor: pointer;
+                  padding: 10px;
+                  border-radius: 40px;
+                }
+    }
+
+  &__img {
+    margin-right: 40px;
+  }
+}
