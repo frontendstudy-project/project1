@@ -1,0 +1,73 @@
+@use "../abstracts/variables";
+@use "../base/fonts";
+
+.footer {
+  background-color:variables.$light-green-color;
+  min-height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+  font-family: variables.$font-family;
+
+        &__logo {
+            width: 15%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            margin-right: 40px;
+
+          }
+
+        &__logo-wrapper {
+          display: flex;
+          flex-direction: row;
+          margin-left: 100px;
+          margin-top: 20px;
+        }
+    
+        &__logo-text {
+          padding-right: 50px;
+        }
+
+        &__nav {
+          width: 30%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+          &__nav-link {
+            color: variables.$primary-color;
+            text-decoration: none;
+          }
+            a:hover {
+                    color: variables.$accent-color;
+          }
+
+          &__info{
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+            &__info-socials {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-evenly;
+              margin-top: 30px;
+              }
+            
+            &__info-address {
+              margin-top: 20px;
+              margin-left: 70px;
+            }
+
+            &__info-tel.footer__info-tel {
+              margin-top: 20px;
+              margin-left: 70px;
+            }
+          
+          }

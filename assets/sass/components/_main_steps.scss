@@ -80,22 +80,48 @@ margin-bottom:40px
 }
 
 // скидки
-.main__div_discount {
-  display: inline-flex;
-  flex-direction: column;
-  
-  max-width: 100%;
-  margin-bottom: 120px;
-  margin-top: 100px;
+.discount_wrapper{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+
+  width: 100%;
+  height: 130px;
+
+  margin-top: 150px;
+  margin-bottom: 200px;
 }
 
-.img_discount_green {
-  position: absolute;
-  top: 175%;
-  // position: relative;
-  transform: rotate(-0.5deg);
-  max-width: 100%;
+.text_discount {
+  width: 100%;
+  padding-left: 30px;
+
+  font-family: variables.$font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  color: #F9F7F4;
 }
+.steps-italic{
+  font-style: italic;
+  font-weight: 400;
+}
+
+.div_discount_orange {
+  background: #FC8A11;
+  transform: rotate(3deg);
+}
+
+.div_discount_green {
+  position: absolute;
+top: 1610px;
+transform: rotate(-2deg);
+background: #A1C487;
+}
+
 
 @media screen and (max-width: 1024px) {
   .main__steps-block {
