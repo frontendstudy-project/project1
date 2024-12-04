@@ -11,21 +11,21 @@
   
 
 
-  &__block {
+  .harvestbox__block {
       display: flex;
       flex-direction: column;
       margin-left: 9.375rem;
       padding-right: 6.25rem;
 
 
-      &-text {
+      .harvestbox__block-text {
           text-transform: uppercase;
           font-weight: 500;
           margin-top: 3.75rem;
           font-size: 3rem;
         }
 
-        &-text1{
+        .harvestbox__block-text1{
           font-size: 1.125rem;
           margin-top: 1.875rem;
         }
@@ -36,7 +36,7 @@
                   margin-top: 2.5rem;
                   /* margin-left: 20px; */
                   display: flex;
-                  border: 0.125remsolid #a5a2a2c9;
+                  border: 0.125rem solid #a5a2a2c9;
                   border-radius: 2.5rem;
                 }
         
@@ -56,7 +56,32 @@
                 }
     }
 
-  &__img {
+  .harvestbox__img {
     margin-right: 2.5rem;
+    // width: 535px;
+    // height: 536px;
   }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1500px){
+    
+  .harvestbox{
+  flex-wrap:wrap;
+  }
+  
+  .harvestbox__block{
+    width: 100%;
+  }
+.harvestbox__block-text{
+      font-size: 2rem;
+      font-weight: 200;
+    }
+    .harvestbox__block-text1{
+      font-size: 1rem;
+    }
+    .harvestbox__img-img1{
+      width: 100%;
+      margin-top: 1rem;
+    }
+
 }
