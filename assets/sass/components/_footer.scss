@@ -11,7 +11,7 @@
   margin-top: 30px;
   font-family: variables.$font-family;
 
-        &__logo {
+        .footer__logo {
             width: 15%;
             display: flex;
             flex-direction: column;
@@ -20,71 +20,58 @@
 
           }
 
-        &-wrapper {
-          display: flex;
-          flex-direction: row;
-          margin-left: 6.25rem;
-          margin-top: 1.25rem;
-        }
+              .footer__logo-wrapper {
+                display: flex;
+                flex-direction: row;
+                margin-left: 6.25rem;
+                margin-top: 1.25rem;
+              }
     
-        &-text {
-          padding-right: 3.125rem;
-        }
+                  .footer__logo-text {
+                    padding-right: 3.125rem;
+                    }
 
-        &__nav {
+        .footer__nav {
           width: 30%;
           display: flex;
           flex-direction: row;
           justify-content: space-evenly;
           align-items: center;
         }
-          &-link {
-            color: variables.$primary-color;
-            text-decoration: none;
-          }
-            a:hover {
-                    color: variables.$accent-color;
-          }
+            .footer__nav-link {
+              color: variables.$primary-color;
+              text-decoration: none;
+              }
+                a:hover {
+                  color: variables.$accent-color;
+                }
 
-          &__info{
+        .footer__info{
             width: 20%;
             display: flex;
             flex-direction: column;
             padding: 1.25rem;
         }
 
-            &-socials {
+            .footer__info-socials {
               display: flex;
               flex-direction: row;
               justify-content: space-evenly;
               margin-top: 1.875rem;
               }
             
-            &-address {
+            .footer__info-address {
               margin-top: 1.25rem;
               margin-left: 4.375rem;
             }
 
-            &-tel {
+            .footer__info-tel {
               margin-top: 1.25rem;
               margin-left: 4.375rem;
             }
           
           }
 
-@media (max-width: 1400px){
-        .footer{
-          display: flex;
-          flex-direction: row;
-        }
-}
+
   
 
-
-@media (max-width: 370px){
-  .footer{
-    display: flex;
-    flex-direction: column;
-  }
-
-}
