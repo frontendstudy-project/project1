@@ -8,83 +8,93 @@
   flex-direction: row;
   justify-content: space-between;
   font-family: variables.$font-family;
-  
+
 
 
   .harvestbox__block {
-      display: flex;
-      flex-direction: column;
-      margin-left: 9.375rem;
-      padding-right: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 9.375rem;
+    padding-right: 6.25rem;
+  
 
 
-      .harvestbox__block-text {
-          text-transform: uppercase;
-          font-weight: 500;
-          margin-top: 3.75rem;
-          font-size: 3rem;
-        }
-
-        .harvestbox__block-text1{
-          font-size: 1.125rem;
-          margin-top: 1.875rem;
-        }
-
-                .input-button-container {
-                  background-color: transparent;
-                  width: 50%;
-                  margin-top: 2.5rem;
-                  /* margin-left: 20px; */
-                  display: flex;
-                  border: 0.125rem solid #a5a2a2c9;
-                  border-radius: 2.5rem;
-                }
-        
-                .input-button-container input {
-                  flex-grow: 1;
-                  margin-left: 1.25rem;
-                  border: none;
-                }
-        
-                .input-button-container button {
-                  background:variables.$orange-color;
-                  color: #f0f8ff;
-                  border: none;
-                  cursor: pointer;
-                  padding: 0.625rem;
-                  border-radius: 2.5rem;
-                }
+    .harvestbox__block-text {
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-top: 3.75rem;
+      font-size: 3rem;
     }
+
+    .harvestbox__block-text1 {
+      font-size: 1.125rem;
+      margin-top: 1.875rem;
+    }
+
+    .input-button-container {
+      background-color: transparent;
+      width: 50%;
+      margin-top: 2.5rem;
+      /* margin-left: 20px; */
+      display: flex;
+      border: 0.125rem solid #a5a2a2c9;
+      border-radius: 2.5rem;
+    }
+
+    .input-button-container input {
+      flex-grow: 1;
+      margin-left: 1.25rem;
+      border: none;
+    }
+
+    .input-button-container button {
+      background: variables.$orange-color;
+      color: #f0f8ff;
+      border: none;
+      cursor: pointer;
+      padding: 0.625rem;
+      border-radius: 2.5rem;
+    }
+  }
 
   .harvestbox__img {
     margin-right: 2.5rem;
     // width: 535px;
     // height: 536px;
   }
+
 }
 
-@media screen and (min-width: 1024px) and (max-width:1500px){
-    
-  .harvestbox{
-  flex-wrap:wrap;
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
+  .harvestbox {
+    flex-wrap: wrap;
   }
-  
-  .harvestbox__block{
+
+  .harvestbox__block {
     width: 100%;
   }
-.harvestbox__block-text{
-      font-size: 2rem;
-      font-weight: 200;
-    }
-    .harvestbox__block-text1{
-      font-size: 1rem;
-    }
-    .harvestbox__img{
-      width: 100%;
-      margin-top: 1rem;
-      padding-left:5rem;
-      padding-right: 5rem;
-      margin-left: 10rem;
-    }
 
+  .harvestbox__block-text {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-left: 10rem;
+  }
+
+  .harvestbox__block-text1 {
+    font-size: 1rem;
+    margin-left: 10rem;
+  }
+
+  .input-button-container{
+    margin-left: 10rem;
+  }
+
+  .harvestbox__img {
+    width: 100%;
+    margin-top: 1rem;
+    padding-left: 14rem;
+    padding-right: 5rem;
+    margin-left: 10rem;
+  
+}
 }
