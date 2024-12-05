@@ -3,58 +3,145 @@
 
 .harvestbox {
   width: 100%;
-  min-height: 536px;
+  min-height: 33.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-family: variables.$font-family;
 
 
-  &__block {
-      display: flex;
-      flex-direction: column;
-      margin-left: 150px;
-      padding-right: 100px;
 
-      &__block-text {
-          font-size: 35px;
-          text-transform: uppercase;
-          font-weight: bold;
-          margin-top: 60px;
-        }
+  .harvestbox__block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 9.375rem;
+    padding-right: 6.25rem;
+  
 
-        &__block-text1{
-          font-size: 18px;
-          margin-top: 30px;
-        }
 
-                .input-button-container {
-                  background-color: transparent;
-                  width: 50%;
-                  margin-top: 40px;
-                  /* margin-left: 20px; */
-                  display: flex;
-                  border: 2px solid #a5a2a2c9;
-                  border-radius: 40px;
-                }
-        
-                .input-button-container input {
-                  flex-grow: 1;
-                  margin-left: 20px;
-                  border: none;
-                }
-        
-                .input-button-container button {
-                  background:variables.$orange-color;
-                  color: #f0f8ff;
-                  border: none;
-                  cursor: pointer;
-                  padding: 10px;
-                  border-radius: 40px;
-                }
+    .harvestbox__block-text {
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-top: 3.75rem;
+      font-size: 3rem;
     }
 
-  &__img {
-    margin-right: 40px;
+    .harvestbox__block-text1 {
+      font-size: 1.125rem;
+      margin-top: 1.875rem;
+    }
+
+    .input-button-container {
+      background-color: transparent;
+      width: 50%;
+      margin-top: 2.5rem;
+      /* margin-left: 20px; */
+      display: flex;
+      border: 0.125rem solid #a5a2a2c9;
+      border-radius: 2.5rem;
+    }
+
+    .input-button-container input {
+      flex-grow: 1;
+      margin-left: 1.25rem;
+      border: none;
+    }
+
+    .input-button-container button {
+      background: variables.$orange-color;
+      color: #f0f8ff;
+      border: none;
+      cursor: pointer;
+      padding: 0.625rem;
+      border-radius: 2.5rem;
+    }
+  }
+
+  .harvestbox__img {
+    margin-right: 2.5rem;
+    // width: 535px;
+    // height: 536px;
+  }
+
+}
+
+@media screen and (min-width: 1124px) and (max-width: 1500px) {
+  .harvestbox {
+    flex-wrap: wrap;
+  }
+
+  .harvestbox__block {
+    width: 100%;
+  }
+
+  .harvestbox__block-text {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-left: 13rem;
+  }
+
+  .harvestbox__block-text1 {
+    font-size: 1rem;
+    margin-left: 13rem;
+  }
+
+  .input-button-container{
+    margin-left: 13rem;
+    width: 40%;
+  }
+
+  .harvestbox__img {
+    width: 100%;
+    margin-top: 1rem;
+    padding-left: 14rem;
+    padding-right: 5rem;
+    margin-left: 13rem;
+  
+}
+}
+
+@media screen and (min-width: 728px) and (max-width: 1124px) {
+    .harvestbox {
+        flex-wrap: wrap;
+        align-content: center;
+      }
+    .harvestbox__block {
+      width: 100%;
+    }
+        .harvestbox__block-text {
+          font-size: 1.2rem;
+          font-weight: 200;
+          margin-left: 7rem;
+          
+        }
+
+      .harvestbox__block-text1 {
+        font-size: 0.9rem;
+        margin-left: 7rem;
+        }
+      .input-button-container {
+        margin-left: 7rem;
+}
+    .harvestbox__img{
+      
+      width: 100%;
+      margin-top: 2rem;
+      margin-left: 12rem;
+    }
+
+}
+
+@media screen and (min-width: 370px) and (max-width: 728px){
+  .harvestbox{
+    display: block;
+  }
+.harvestbox__block-text {
+  font-size: 1.2rem;
+  font-weight: 200;
+
+}
+
+  .harvestbox__img{
+    width: 100%;
   }
 }
