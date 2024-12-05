@@ -38,7 +38,7 @@
         }
 
         .header__menu {
-            display: flex; // Показываем меню по умолчанию
+            display: flex;
         }
     }
 
@@ -75,7 +75,7 @@
         cursor: pointer;
     }
 
-    &__cart {
+    .header__cart {
         font-size: 1.25rem;
         color: rgb(51, 51, 51);
         cursor: pointer;
@@ -85,6 +85,7 @@
         }
     }
 }
+
 
 @media screen and (min-width: 1280px) {
     .header {
@@ -115,6 +116,8 @@
 @media (max-width: 1024px) {
     .header {
         padding: 1rem 1.5rem;
+        width: 100vw;
+        height: auto;
 
         &__logo {
             &-text {
@@ -137,6 +140,9 @@
 @media (max-width: 370px) {
     .header {
         padding: 1rem;
+        padding-left: 1rem;
+        width: 100vw;
+        height: auto;
 
         &__logo {
             &-text {
@@ -145,50 +151,51 @@
         }
 
         .header__menu {
-            display: none; // Скрыть меню на мобильных устройствах
-        }
+            display: none;
 
-        .header__burger {
-            display: block; // Показываем бургер-меню на мобильных устройствах
-        }
-
-        &__nav ul {
-            flex-direction: column;
-            align-items: center;
-
-            li {
-                margin-right: 0;
-                margin-bottom: 1rem;
+            .header__cart {
+                display: nonenone !important;
             }
 
-            a {
-                font-size: 0.75rem;
+            .header__burger {
+                display: block;
+            }
+
+            &__nav ul {
+                flex-direction: column;
+                align-items: center;
+
+                li {
+                    margin-right: 0;
+                    margin-bottom: 1rem;
+                }
+
+                a {
+                    font-size: 0.75rem;
+                }
             }
         }
     }
 
-    .header__cart {
-        display: none; // Скрыть корзину на мобильных устройствах
+
+    .header__burger-input:checked+.header__nav .header__menu {
+        display: flex;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-}
 
-.header__burger.open+.header__nav .header__menu {
-    display: flex; // Показываем меню, когда бургер-меню активно
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background-color: white;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    .header__burger-input:checked+.header__nav .header__burger-label {
+        transform: rotate(90deg); // Поворот иконки бургера
+    }
 
-.header__burger.open {
-    transform: rotate(90deg);
-}
-
-.header__menu-item {
-    margin: 1rem 0;
+    .header__menu-item {
+        margin: 1rem 0;
+    }
 }
