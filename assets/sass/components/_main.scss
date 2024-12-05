@@ -110,18 +110,21 @@ color: rgba(234, 247, 229, 1);
 
 @media screen and (max-width: 1024px) {
 .main {
+align-items: center;
 flex-direction: column;
 justify-content: center;
 font-family: variables.$font-family; }
+
 .container-1 {
 width: 100%;
-align-items: flex-start;
 }
 .group-of-buttons {
-  justify-items: center;
+  justify-content: flex-end;
+  margin-left: 12rem;
 }
 .girl {
   width: auto;
+  margin-right: 500px;
 }
 .title-1 {
   font-size: 2rem; 
@@ -133,14 +136,13 @@ align-items: flex-start;
 }
 .circls {
   width: 25%;
-}
+  }
 .container-2 {
   width: 100%;
-  align-items: center;
-  margin-right: none;
-  margin-left: none;
-  margin-top: none;
-   }
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 350px;
+  }
  .button-round {
   width: 100px;
   height: 100px;
@@ -148,6 +150,8 @@ align-items: flex-start;
   position: relative;
   margin-right: 350px;
   margin-bottom: none;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
  }
 }
 @media screen and (max-width: 370px) {
