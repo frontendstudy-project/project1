@@ -79,5 +79,17 @@
   }
   
 }
+
+@media (max-width:370px){
+  .footer {
+  display: flex;
+ flex-direction: column;
+ align-content: center;
+  }
+  .footer__logo-img{
+    width: 100%;
+  }
+  
   
 
+}

@@ -65,7 +65,7 @@
 
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1500px) {
+@media screen and (min-width: 1124px) and (max-width: 1500px) {
   .harvestbox {
     flex-wrap: wrap;
   }
@@ -77,16 +77,17 @@
   .harvestbox__block-text {
     font-size: 2rem;
     font-weight: 200;
-    margin-left: 10rem;
+    margin-left: 13rem;
   }
 
   .harvestbox__block-text1 {
     font-size: 1rem;
-    margin-left: 10rem;
+    margin-left: 13rem;
   }
 
   .input-button-container{
-    margin-left: 10rem;
+    margin-left: 13rem;
+    width: 40%;
   }
 
   .harvestbox__img {
@@ -94,7 +95,53 @@
     margin-top: 1rem;
     padding-left: 14rem;
     padding-right: 5rem;
-    margin-left: 10rem;
+    margin-left: 13rem;
   
 }
+}
+
+@media screen and (min-width: 728px) and (max-width: 1124px) {
+    .harvestbox {
+        flex-wrap: wrap;
+        align-content: center;
+      }
+    .harvestbox__block {
+      width: 100%;
+    }
+        .harvestbox__block-text {
+          font-size: 1.2rem;
+          font-weight: 200;
+          margin-left: 7rem;
+          
+        }
+
+      .harvestbox__block-text1 {
+        font-size: 0.9rem;
+        margin-left: 7rem;
+        }
+      .input-button-container {
+        margin-left: 7rem;
+}
+    .harvestbox__img{
+      
+      width: 100%;
+      margin-top: 2rem;
+      margin-left: 12rem;
+    }
+
+}
+
+@media screen and (min-width: 370px) and (max-width: 728px){
+  .harvestbox{
+    display: block;
+  }
+.harvestbox__block-text {
+  font-size: 1.2rem;
+  font-weight: 200;
+
+}
+
+  .harvestbox__img{
+    width: 100%;
+  }
 }
