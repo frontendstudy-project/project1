@@ -140,7 +140,7 @@
     .header {
         padding: 1rem;
         padding-left: 1rem;
-        width: 100vw;
+        width: 100%;
         height: auto;
 
         &__logo {
@@ -151,50 +151,28 @@
 
         .header__menu {
             display: none;
+        }
 
-            .header__cart {
-                display: none !important;
+        .header__cart {
+            display: none !important;
+        }
+
+        .header__burger {
+            display: block;
+        }
+
+        &__nav ul {
+            flex-direction: column;
+            align-items: center;
+
+            li {
+                margin-right: 0;
+                margin-bottom: 1rem;
             }
 
-            .header__burger {
-                display: block;
-            }
-
-            &__nav ul {
-                flex-direction: column;
-                align-items: center;
-
-                li {
-                    margin-right: 0;
-                    margin-bottom: 1rem;
-                }
-
-                a {
-                    font-size: 0.75rem;
-                }
+            a {
+                font-size: 0.75rem;
             }
         }
-    }
-
-
-    .header__burger-input:checked+.header__nav .header__menu {
-        display: flex;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-        background-color: white;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem 0;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .header__burger-input:checked+.header__nav .header__burger-label {
-        transform: rotate(90deg); // Поворот иконки бургера
-    }
-
-    .header__menu-item {
-        margin: 1rem 0;
     }
 }
