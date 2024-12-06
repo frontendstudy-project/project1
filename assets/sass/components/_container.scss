@@ -8,6 +8,7 @@
   flex-direction: row;
   justify-content: space-between;
   font-family: variables.$font-family;
+  margin-top: 3rem;
 
 
 
@@ -87,7 +88,7 @@
 
   .input-button-container{
     margin-left: 13rem;
-    width: 40%;
+    width: 20%;
   }
 
   .harvestbox__img {
@@ -128,6 +129,7 @@
       margin-top: 2rem;
       margin-left: 12rem;
     }
+  
 
 }
 
@@ -143,5 +145,6 @@
 
   .harvestbox__img{
     width: 100%;
+   margin-left: 3rem;
   }
 }
