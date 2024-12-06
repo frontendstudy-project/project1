@@ -3,10 +3,12 @@
 
 .gallery {
     display:grid;
-    margin:6.26em auto 2.5em auto;
-    min-width:80rem;
+    justify-items: stretch;
+        /*margin:6.26em auto 2.5em auto;*/
+    width:100%;
     min-height:100.875em;
     grid-template-rows: 10% 90%;
+    grid-template-columns: 1fr;
     }
     .border{
         height:auto;
@@ -18,7 +20,7 @@
         max-height: 2.75em;
         font-family:"DM Sans", sans-serif;
         font-size: 2.5em;
-        margin:auto;
+        /*margin:auto;*/
         text-align: center;
     }
     .belowcapital {
@@ -27,18 +29,19 @@
         max-height: 4.5em;
         font-family: "DM Sans", sans-serif;
         font-size: 1.125em;
-        margin: 0.875em auto auto auto;
+        /*margin: 0.875em auto auto auto;*/
         text-align: center;
     }
 
     .market {
         display:grid;
+        justify-items: stretch;
         grid-template-columns: 1fr 1fr 1fr;
         gap:1.5em;
-        max-width:95%;
+        width:100%;
         padding-left: 2em;
         padding-right: 2em;
-        margin:auto;
+        /*margin:auto;*/
     }
 
     .veg{
@@ -93,28 +96,29 @@
         @media screen and (max-width: 1024px){
             .gallery {
                 display:grid;
-                /*margin:auto;*/
+                margin-left:2em;
+                margin-top: 6.26em;
                 align-content: center;
-                width:100vw;
+                max-width:100vw;
                 max-height:129.875em;
                 grid-template-rows: 10% 90%;
                 }
         
                 .border{       
-                    width:35.125em;
+                    min-width:100%;
                     padding:2.5em 0em;
-                    margin:auto;
+                    margin-left:2em;
                 }
         
                 .capital {
-                    width:88%;
-                    max-height: 2em;
+                    min-width:17.375em;
+                    min-height: 2em;
                     font-size: 1.75em;
                     padding-bottom: 0.875em;
                 }
                 .belowcapital {
-                    width: 79%;
-                    max-height: 4.5em;
+                    min-width:35.125em;
+                    min-height: 4.5em;
                     font-size: 1.125em;
                 }
         
