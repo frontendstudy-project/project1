@@ -12,27 +12,13 @@
   font-family: variables.$font-family;
 
         .footer__logo {
-            width: 15%;
-            margin-top: 3rem;
-<<<<<<< HEAD
-            margin-right: 2rem;
-
-          }
-
-              .footer__logo-wrapper {
-                display: flex;
-                flex-direction: row;
-                margin-left: 4rem;
-                margin-top: 1.25rem;
-              }
-    
-                  .footer__logo-text {
-                    padding-right: 3.5rem;
-                    }
-=======
+          max-width: 100%;
+          min-height: 100%;
+          object-fit: contain;
+          justify-content: center;
+          margin-top: 3rem;
         }
 
->>>>>>> 23872771b0ce2e6453ddf0010ac7eba0d24d45f1
 
         .footer__nav {
           width: 30%;
@@ -85,22 +71,13 @@
 
 @media (max-width:700px){
   .footer {
-  display: flex;
+  width: 100%;
   flex-direction: column;
-  align-items: center;
-  }
-<<<<<<< HEAD
-  .footer__logo-img{
-    width: 100%;
-  }
-  
-.footer__logo-wrapper{
-    margin-right: 6rem;
   }
 =======
 .footer__logo{
-  width: 100%;
- align-content: center;
+  width: 100%
+
 }
 >>>>>>> 23872771b0ce2e6453ddf0010ac7eba0d24d45f1
   .footer__nav{

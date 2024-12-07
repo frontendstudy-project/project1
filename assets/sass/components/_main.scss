@@ -9,7 +9,7 @@
   padding-top: 4vw;
   padding-bottom: 2vw;
   font-family: variables.$font-family;
-justify-content: space-around;
+  justify-content: space-around;
 }
 
 .italic {
@@ -32,14 +32,11 @@ justify-content: space-around;
   margin-right: 1vw;
   align-items: flex-end;
   margin-left: 10%;
+  justify-content: flex-end;
   }
-
-.container-2 {
-    display: flex;
-    flex-direction: column;
-    margin-right: 4vw;
-}
-
+ .girl {
+  margin-top: 10vw; 
+ }
 .button-round {
   background-color: rgba(250, 243, 231, 1);
   font-family: variables.$font-family;
@@ -52,7 +49,10 @@ justify-content: space-around;
   border-color: rgba(250, 243, 231, 1);
   margin-top: 1vw;
   margin-bottom: 50px;
-    }
+  }
+.button-shop {
+  transform: rotate(-15deg);
+}
 
 .button-oval {
     border: solid white 1px;
@@ -62,14 +62,13 @@ justify-content: space-around;
 .title-1 {
  font-family: variables.$font-family;
   color: white;
-  font-size: 4.5rem;
+  font-size: 4rem;
    }
 
 .title-2 {
 font-family: variables.$font-family;
   color: white;
-  font-size: 0.9rem;
-    
+  font-size: 0.9rem;    
 }
 
 .group-of-buttons {
@@ -110,21 +109,27 @@ color: rgba(234, 247, 229, 1);
 
 @media screen and (max-width: 1024px) {
 .main {
+display: flex;
 align-items: center;
 flex-direction: column;
 justify-content: center;
-font-family: variables.$font-family; }
+font-family: variables.$font-family;
+}
 
 .container-1 {
 width: 100%;
+margin-left: 15rem;
 }
 .group-of-buttons {
   justify-content: flex-end;
-  margin-left: 12rem;
+  margin-left: 11.5rem;
 }
 .girl {
   width: auto;
-  margin-right: 500px;
+  margin-right: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-top: 0;
 }
 .title-1 {
   font-size: 2rem; 
@@ -139,6 +144,8 @@ width: 100%;
   }
 .container-2 {
   width: 100%;
+  margin-top: 0;
+  margin-right: 0;
   align-items: flex-start;
   justify-content: center;
   margin-left: 350px;
@@ -154,21 +161,29 @@ width: 100%;
   margin-left: 1.5rem;
  }
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 745px) {
   .main {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: variables.$font-family;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.5rem;    
   }
+  .circls {
+    width: 45%;
+    }
     .container-1 {
-    width: 100%;
+    width: 90%;
+    margin-left: 3rem;
+    margin-right: 1rem;
   } 
     .container-2 { 
     width: 100%;
+    margin-left: 0;
       }
       .girl {
-        width: 70%;
+        width: 100%;
       }
       .title-1 {
         font-size: 1.3rem; 
@@ -177,8 +192,78 @@ width: 100%;
         font-size: 0.8rem;
       }
       .group-of-buttons {
+        align-items: center;
+        justify-content: center;
         padding-left: none;
         margin-top: none;
+        margin: auto;
+      }
+      .button-oval-1 {
+        font-size: 0.6rem;
+        width: 80px;
+        height: 25px;
+    }
+    
+    .button-oval-2 {
+      font-size: 0.6rem;
+        background-color: rgba(161, 196, 135, 1);
+        width: 80px;
+        height: 25px;
+        }
+    
+    .button-oval-3 {
+      font-size: 0.6rem;
+        background-color: rgba(161, 196, 135, 1);
+        width: 80px;
+        height: 25px;
+        margin-top: 10px;
+    }
+    
+    .button-oval-4 {
+      font-size: 0.6rem;
+        background-color: rgba(161, 196, 135, 1);
+        width: 80px;
+        height: 25px;
+        margin-top: 10px;
+      }
+      
+    }
+@media screen and (max-width: 370px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: variables.$font-family;
+    color: white;
+    font-size: 1.5rem;    
+  }
+  .circls {
+    width: 45%;
+    }
+    .container-1 {
+    width: 90%;
+    margin-left: 3rem;
+    margin-right: 1rem;
+  } 
+    .container-2 { 
+    width: 100%;
+    margin-left: 0;
+      }
+      .girl {
+        width: 100%;
+      }
+      .title-1 {
+        font-size: 1.3rem; 
+      }
+      .title-2 {
+        font-size: 0.8rem;
+      }
+      .group-of-buttons {
+        align-items: center;
+        justify-content: center;
+        padding-left: none;
+        margin-top: none;
+        margin: auto;
       }
       .button-oval-1 {
         font-size: 0.6rem;
