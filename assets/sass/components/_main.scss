@@ -157,18 +157,23 @@ width: 100%;
 @media screen and (max-width: 370px) {
   .main {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: variables.$font-family;
     color: white;
     font-size: 1.5rem;
+    
   }
     .container-1 {
     width: 100%;
+
   } 
     .container-2 { 
     width: 100%;
+    margin-left: none;
       }
       .girl {
-        width: 70%;
+        width: 100%;
       }
       .title-1 {
         font-size: 1.3rem; 
@@ -177,8 +182,11 @@ width: 100%;
         font-size: 0.8rem;
       }
       .group-of-buttons {
+        align-items: center;
+        justify-content: center;
         padding-left: none;
         margin-top: none;
+        margin: auto;
       }
       .button-oval-1 {
         font-size: 0.6rem;
