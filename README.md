@@ -19,13 +19,12 @@ Project for itgirlschool https://frontendstudy-project.github.io/project1/
 
 ## Установка и запуск SASS / Setting Up and Running SASS  
 
-### Шаги установки (на русском)  
+### Шаги установки 
 1. Убедитесь, что у вас установлен **Node.js** (SASS требует npm).  
    - Скачайте и установите [Node.js](https://nodejs.org).  
 
 2. Установите SASS глобально через npm:  
-   ```bash  
-   npm install -g sass  
+    npm install -g sass  
 
 3. Для компиляции SASS используйте следующую команду:
    sass --watch assets/sass/app.scss assets/style/style.css  
@@ -55,7 +54,7 @@ The project was created by:
 Installation Steps (in English)
 
 1. Make sure you have Node.js installed (SASS requires npm).
-        Download and install Node.js.
+ Download and install Node.js.
 
 2. Install SASS globally using npm:
 
