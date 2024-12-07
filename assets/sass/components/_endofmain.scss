@@ -12,13 +12,11 @@
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
-    overflow: hidden;
     min-height: 100vh;
-
-
 
     &:before {
         content: "";
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
@@ -88,13 +86,14 @@
     .shipping {
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
+        /* Центрирование содержимого */
         padding: 4rem;
         margin: 0 auto 3rem;
         height: auto;
 
         &:before {
             background-image: url('../img/delivery_tablet.jpg');
-            background-size: cover;
             background-size: cover;
             background-position: center;
             width: 100%;
@@ -104,12 +103,10 @@
         .shipping__text {
             display: block;
             text-align: center;
+            /* Выравнивание текста по центру */
             font-size: 0.875rem;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            margin-top: 2rem;
             max-width: 100%;
-
         }
     }
 
@@ -123,7 +120,6 @@
         display: none;
     }
 
-
     .shipping__highlight--orange {
         display: none;
     }
@@ -133,6 +129,8 @@
     .shipping {
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
+        /* Центрирование содержимого */
         padding: 2rem;
         margin: 0 auto 3rem;
         width: 100%;
@@ -153,9 +151,7 @@
             display: block;
             text-align: center;
             font-size: 0.75rem;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            margin-top: 1rem;
             max-width: 100%;
         }
     }

@@ -112,7 +112,7 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .header {
         padding: 1rem 1.5rem;
         width: 100vw;
@@ -136,7 +136,7 @@
     }
 }
 
-@media (max-width: 370px) {
+@media screen and (max-device-width: 767px) {
     .header {
         padding: 1rem;
         padding-left: 1rem;
