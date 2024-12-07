@@ -1,37 +1,145 @@
 @use "../abstracts/mixin";
 @use "../base/fonts";
+
 .gallery {
-    display:grid;
-    margin:6.26em auto 2.5em auto;
-    min-width:64em; /*1024px, хотя в tg 1280px, непонятно тогда какая адаптация от 1024-1280)*/
-    min-height:100.875em;
+    display: grid;
+    margin: 6.26em auto 2.5em auto;
+    min-width: 64em;
+    /*1024px, хотя в tg 1280px, непонятно тогда какая адаптация от 1024-1280)*/
+    min-height: 100.875em;
     grid-template-rows: 10% 90%;
     grid-template-columns: 1fr;
     /*padding-left: 2em;
     padding-right: 2em;*/
     /*overflow-x: hidden;*/
+}
+
+.border {
+    height: auto;
+    padding-bottom: 2.5em;
+    justify-self: center;
+}
+
+.capital {
+    display: grid;
+    max-width: 51%;
+    max-height: 2.76em;
+    font-family: "DM Sans", sans-serif;
+    font-size: 2.5em;
+    margin: auto;
+    text-align: center;
+    justify-self: center;
+}
+
+.belowcapital {
+    display: grid;
+    max-width: 46%;
+    max-height: 4.5em;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.125em;
+    margin: 0.875em auto auto auto;
+    text-align: center;
+    justify-self: center;
+}
+
+.market {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5em;
+    max-width: 1215em;
+    /*padding-left: 2em;
+        padding-right: 2em;*/
+    margin: auto;
+}
+
+.veg {
+    display: grid;
+    grid-template-rows: 25% 7% 52% 15%;
+    border-radius: 1.25em;
+    background-color: rgb(234, 247, 229);
+    min-width: 24.3125em;
+    min-height: 29.0625em;
+}
+
+
+.veg__name {
+    display: grid;
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    padding-left: 24px;
+    /*@include attributes;*/
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 64px;
+    padding-top: 64px;
+    margin-bottom: 0px;
+}
+
+.veg__subname {
+    display: grid;
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    padding-left: 24px;
+    /*@include attributes;*/
+    font-size: 1.125em;
+    padding-top: 7px;
+}
+
+.veg_image {
+    display: grid;
+    justify-items: center;
+    padding-bottom: 10px;
+}
+
+.veg__price-tag {
+    display: grid;
+    /*@include attributes;*/
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    padding-left: 24px;
+    font-size: 1.125em;
+    padding-top: 32px;
+}
+
+@media screen and (max-width: 1024px) {
+    .gallery {
+        display: grid;
+        margin: 6.26em 0em 6.26em 2em;
+        /*margin-left:2em;
+                margin-top: 6.26em;*/
+        align-content: center;
+        /*min-width: 44em;
+                max-width: 63.9375em;*/
+        max-height: 100%;
+        grid-template-rows: 10% 90%;
+        grid-template-columns: repeat(auto-fill, minmax(786px, 1fr));
     }
 
-    .border{
-        height:auto;
-        padding-bottom: 2.5em;
+    .border {
+        /*min-width:44em;*/
+        /*padding:2.5em 0em;*/
+        display: grid;
+        margin-left: 2em;
         justify-self: center;
-            }
+    }
+
+
     .capital {
-        display:grid;
-        max-width:51%;
-        max-height: 2.76em;
-        font-family:"DM Sans", sans-serif;
-        font-size: 2.5em;
-        margin:auto;
+        display: grid;
+        /*max-width:17.375em;*/
+        max-height: 2em;
+        font-size: 1.75em;
+        padding-bottom: 0.875em;
+        /*margin:auto;*/
         text-align: center;
         justify-self: center;
     }
+
     .belowcapital {
-        display:grid;
-        max-width: 46%;
-        max-height: 4.5em;
-        font-family: "DM Sans", sans-serif;
+        display: grid;
+        /*max-width:35.125em;
+                    min-height: 4.5em;*/
         font-size: 1.125em;
         margin: 0.875em auto auto auto;
         text-align: center;
@@ -39,292 +147,187 @@
     }
 
     .market {
-        display:grid;
+        display: grid;
         justify-self: center;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap:1.5em;
-        max-width:1215em;
-        /*padding-left: 2em;
-        padding-right: 2em;*/
-        margin:auto;
-    }
-
-    .veg{
-        display:grid;
-        grid-template-rows: 25% 7% 52% 15%;
-        border-radius:1.25em;
-        background-color:rgb(234, 247, 229);
-        min-width:24.3125em;
-        min-height:29.0625em;
-    }
-        
-    
-        .veg__name{
-            display:grid;
-            font-family: "DM Sans", sans-serif;
-            font-style: normal;
-            padding-left:24px;
-            /*@include attributes;*/
-            font-size: 32px;
-            font-weight: bold;
-            padding-top:64px;
-            padding-top:64px;
-            margin-bottom: 0px;
-        }
-    
-        .veg__subname{
-            display:grid;
-            font-family: "DM Sans", sans-serif;
-            font-style: normal;
-            padding-left:24px;
-            /*@include attributes;*/
-            font-size: 1.125em;
-            padding-top:7px;
-        }
-        
-        .veg_image{
-            display:grid;
-            justify-items:center;
-            padding-bottom: 10px;
-        }
-        
-        .veg__price-tag {
-            display:grid;
-            /*@include attributes;*/
-            font-family: "DM Sans", sans-serif;
-            font-style: normal;
-            padding-left:24px;
-            font-size: 1.125em;
-            padding-top:32px;
-        }
-    
-        @media screen and (max-width: 1024px){
-            .gallery {
-                display:grid;
-                margin:6.26em 0em 6.26em 2em;
-                /*margin-left:2em;
-                margin-top: 6.26em;*/
-                align-content: center;
-                /*min-width: 44em;
-                max-width: 63.9375em;*/
-                max-height:100%;
-                grid-template-rows: 10% 90%;
-                grid-template-columns: repeat (auto-fill , minmax(786px, 1fr));
-                }
-
-                .border{       
-                    /*min-width:44em;*/
-                    /*padding:2.5em 0em;*/
-                    display:grid;
-                    margin-left:2em;
-                    justify-self: center;
-                }
-
-        
-                .capital {
-                    display:grid;
-                    /*max-width:17.375em;*/
-                    max-height: 2em;
-                    font-size: 1.75em;
-                    padding-bottom: 0.875em;
-                    /*margin:auto;*/
-                    text-align: center;
-                    justify-self: center;
-                }
-
-                .belowcapital {
-                    display:grid;
-                    /*max-width:35.125em;
-                    min-height: 4.5em;*/
-                    font-size: 1.125em;
-                    margin: 0.875em auto auto auto;
-                    text-align: center;
-                    justify-self: center;
-                }
-        
-           .market {
-                display:grid;
-                justify-self: center;
-                /*min-width: 44em;
+        /*min-width: 44em;
                 max-width:75.9375em;*/
-                gap:1.5em;
-                grid-template-areas:"veg veg"
-                "veg veg"
-                "veg veg"
-                "veg veg";
-                grid-template-columns:1fr 1fr;
-                margin: 2.5em auto;
-                max-height: 100%;
-                                }
-        
- 
-        
-            .veg{
-                display:grid;
-                grid-template-rows: 25% 7% 52% 15%;
-                border-radius:1.25em;
-                background-color:rgb(234, 247, 229);
-                max-width:21.375em;
-                max-height:29.0625em;
-                padding-bottom: 1.25em;
-        }
+        gap: 1.5em;
+        grid-template-areas: "veg veg"
+            "veg veg"
+            "veg veg"
+            "veg veg";
+        grid-template-columns: 1fr 1fr;
+        margin: 2.5em auto;
+        max-height: 100%;
+    }
 
-        .none {
-            display: none;
-        }   
 
-        
-        .veg__name{
-            display:grid;
-            /*@include attributes;*/
-            font-family: "DM Sans", sans-serif;
-            font-style: normal;
-            padding-left:24px;
-            font-size: 28px;
-            font-weight: bold;
-                    padding-top:64px;
-            margin-bottom: 0px;
-        }
-        
-        .veg__subname{
-            display:grid;
-            font-family: "DM Sans", sans-serif;
-            font-style: normal;
-            padding-left:24px;
-            /*@include attributes;*/
-            font-size: 1.125em;
-            padding-top:0.5em;
-        }
-        
-        .veg_image{
-            display:grid;
-            justify-items:center;
-        }
-        
-        .veg__price-tag{
-            display:grid;
-            font-family: "DM Sans", sans-serif;
-            font-style: normal;
-            padding-left:24px;
-            /*@include attributes;*/
-            font-size: 1.125em;
-            padding-top:32px;
-        }
-        }
-        
-        @media screen and (max-width: 370px){
-            .gallery {
-                display:grid;
-                margin:6.26em 0em 0em 2em;
-                /*align-content: center;*/
-                min-width: 20.9375em;
-                max-width: 23.4375em;
-                max-height: 100%;
-                /*min-width:23.4375em;
+
+    .veg {
+        display: grid;
+        grid-template-rows: 25% 7% 52% 15%;
+        border-radius: 1.25em;
+        background-color: rgb(234, 247, 229);
+        max-width: 21.375em;
+        max-height: 29.0625em;
+        padding-bottom: 1.25em;
+    }
+
+    .none {
+        display: none;
+    }
+
+
+    .veg__name {
+        display: grid;
+        /*@include attributes;*/
+        font-family: "DM Sans", sans-serif;
+        font-style: normal;
+        padding-left: 24px;
+        font-size: 28px;
+        font-weight: bold;
+        padding-top: 64px;
+        margin-bottom: 0px;
+    }
+
+    .veg__subname {
+        display: grid;
+        font-family: "DM Sans", sans-serif;
+        font-style: normal;
+        padding-left: 24px;
+        /*@include attributes;*/
+        font-size: 1.125em;
+        padding-top: 0.5em;
+    }
+
+    .veg_image {
+        display: grid;
+        justify-items: center;
+    }
+
+    .veg__price-tag {
+        display: grid;
+        font-family: "DM Sans", sans-serif;
+        font-style: normal;
+        padding-left: 24px;
+        /*@include attributes;*/
+        font-size: 1.125em;
+        padding-top: 32px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .gallery {
+        display: grid;
+        margin: 6.26em 0em 0em 2em;
+        /*align-content: center;*/
+        min-width: 20.9375em;
+        max-width: 23.4375em;
+        max-height: 100%;
+        /*min-width:23.4375em;
                 max-width: 43.9375em;*/
-                /*width:100vw;*/
-                grid-template-rows: 10% 90%;
-                grid-template-columns: 1fr;
-                }
+        /*width:100vw;*/
+        grid-template-rows: 10% 90%;
+        grid-template-columns: 1fr;
+    }
 
 
-        
-                .border{       
-                    display: grid;
-                    /*min-width: 20.9375em;*/
-                    max-width: 23.4375em;
-                    max-height: 100%;
-                    /*width:100vw;*/
-                    padding:2.5em 0em 10em 0em;
-                    /*margin-left:2em;*/
-                    justify-self: center;
-                }
 
-        
-                .capital {
-                    display:grid;
-                    max-width: 15.3125em;
-                    /*max-width: 44em;*/
-                    max-height: 1.75em;
-                    font-size: 1.5em;
-                    padding-bottom:0.875em;
-                    /*margin:auto;*/
-                    text-align: center;
-                    justify-self: center;
-                }
+    .border {
+        display: grid;
+        /*min-width: 20.9375em;*/
+        max-width: 23.4375em;
+        max-height: 100%;
+        /*width:100vw;*/
+        padding: 2.5em 0em 10em 0em;
+        /*margin-left:2em;*/
+        justify-self: center;
+    }
 
-                .belowcapital {
-                    display:grid;
-                    max-width:20.9375em;
-                    min-height: 4.5em;
-                    font-size: 0.875em;
-                    margin: 0.875em auto 0em auto;
-                    text-align: center;
-                    justify-self: center;
-                }
 
-        
-           .market {
-                display:grid;
-                justify-self: center;
-                max-width:20.9375em;
-                /*max-width: 44em;*/
-                max-height: 100%;
-                /*min-width:20.9375em;
+    .capital {
+        display: grid;
+        max-width: 15.3125em;
+        /*max-width: 44em;*/
+        max-height: 1.75em;
+        font-size: 1.5em;
+        padding-bottom: 0.875em;
+        /*margin:auto;*/
+        text-align: center;
+        justify-self: center;
+    }
+
+    .belowcapital {
+        display: grid;
+        max-width: 20.9375em;
+        min-height: 4.5em;
+        font-size: 0.875em;
+        margin: 0.875em auto 0em auto;
+        text-align: center;
+        justify-self: center;
+    }
+
+
+    .market {
+        display: grid;
+        justify-self: center;
+        max-width: 20.9375em;
+        /*max-width: 44em;*/
+        max-height: 100%;
+        /*min-width:20.9375em;
                 max-width:44em;*/
-                grid-template-areas:"veg";
-                grid-template-columns: 1fr;
-                /*margin:auto;*/
-                margin-bottom: 10em;
-                }
+        grid-template-areas: "veg";
+        grid-template-columns: 1fr;
+        /*margin:auto;*/
+        margin-bottom: 10em;
+    }
 
-        
-            .veg {
-                display:grid;
-                grid-template-rows: 25% 7% 52% 15%;
-                border-radius:1.25em;
-                background-color:rgb(234, 247, 229);
-                max-width:20.9375em;
-                max-height:27.6875em;
-                padding-bottom: 1.25em;
-        }
 
-            .veg__name {
-            display:grid;
-            font-family: "DM Sans", sans-serif;
-            font-style: normal;
-            padding-left:24px;
-            /*@include attributes;*/
-            font-size: 1.5em;
-            font-weight: bold;
-            padding-top:2.5em;
-            margin-bottom: 0px;
-        }
+    .veg {
+        display: grid;
+        grid-template-rows: 25% 7% 52% 15%;
+        border-radius: 1.25em;
+        background-color: rgb(234, 247, 229);
+        max-width: 20.9375em;
+        max-height: 27.6875em;
+        padding-bottom: 1.25em;
+    }
 
-                
-        .veg__subname{
-            display:grid;
-            font-family: "DM Sans", sans-serif;
-            font-style: normal;
-            padding-left:24px;
-            /*@include attributes;*/
-            font-size: 0.875em;
-            padding-top:0.5em;
-        }
-        
-        .veg_image{
-            display:grid;
-            justify-items:center;
-        }
-        
-        .veg__price-tag{
-            display:grid;
-            font-family: "DM Sans", sans-serif;
-            font-style: normal;
-            padding-left:24px;
-            /*@include attributes;*/
-            font-size: 0.875em;
-            padding-top:1.375em;
-        }
-        }
-        
+    .veg__name {
+        display: grid;
+        font-family: "DM Sans", sans-serif;
+        font-style: normal;
+        padding-left: 24px;
+        /*@include attributes;*/
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-top: 2.5em;
+        margin-bottom: 0px;
+    }
+
+
+    .veg__subname {
+        display: grid;
+        font-family: "DM Sans", sans-serif;
+        font-style: normal;
+        padding-left: 24px;
+        /*@include attributes;*/
+        font-size: 0.875em;
+        padding-top: 0.5em;
+    }
+
+    .veg_image {
+        display: grid;
+        justify-items: center;
+    }
+
+    .veg__price-tag {
+        display: grid;
+        font-family: "DM Sans", sans-serif;
+        font-style: normal;
+        padding-left: 24px;
+        /*@include attributes;*/
+        font-size: 0.875em;
+        padding-top: 1.375em;
+    }
+}

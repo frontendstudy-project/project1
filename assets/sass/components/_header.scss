@@ -1,15 +1,24 @@
 @use "../abstracts/variables";
 @use "../base/fonts";
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    // padding: 1rem 2rem;
+    //top: 0;
+    //left: 0;
+    width: 100%;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid #e0e0e0;
     font-family: variables.$font-family;
+    margin: 0;
 
     &__nav {
         ul {
@@ -138,10 +147,10 @@
 
 @media screen and (max-device-width: 767px) {
     .header {
-        padding: 1rem;
-        padding-left: 1rem;
-        width: 100%;
-        height: auto;
+        //padding: 1rem;
+        //padding-left: 1rem;
+        //width: 100%;
+        //height: auto;
 
         &__logo {
             &-text {
@@ -166,12 +175,12 @@
             align-items: center;
 
             li {
-                margin-right: 0;
+                //margin-right: 0;
                 margin-bottom: 1rem;
             }
 
             a {
-                font-size: 0.75rem;
+                font-size: 0.875rem;
             }
         }
     }
