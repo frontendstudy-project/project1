@@ -16,12 +16,14 @@
 .steps__block {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  //justify-content: space-evenly;
   background-image: url('../img/back.png');
   background-size: cover;
   border-radius: 80px;
-  max-width: 1216px;
-  max-height: 460px;
+  width: 100%;
+  //max-width: 1216px;
+  //max-height: 460px;
   position: relative;
   font-size: 24px;
   font-style: normal;
@@ -30,7 +32,8 @@
   letter-spacing: -0.96px;
   text-transform: uppercase;
   text-align: start;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+
 }
 
 .steps-title {
