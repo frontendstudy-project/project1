@@ -3,13 +3,13 @@
 .gallery {
     display:grid;
     margin:6.26em auto 2.5em auto;
-    min-width:75.9375em;
+    min-width:64em; /*1024px, хотя в tg 1280px, непонятно тогда какая адаптация от 1024-1280)*/
     min-height:100.875em;
     grid-template-rows: 10% 90%;
     grid-template-columns: 1fr;
     /*padding-left: 2em;
     padding-right: 2em;*/
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     }
 
     .border{
@@ -20,7 +20,7 @@
     .capital {
         display:grid;
         max-width:51%;
-        max-height: 2.75em;
+        max-height: 2.76em;
         font-family:"DM Sans", sans-serif;
         font-size: 2.5em;
         margin:auto;
@@ -101,20 +101,21 @@
         @media screen and (max-width: 1024px){
             .gallery {
                 display:grid;
-                margin:6.26em 0em 0em 2em;
+                margin:6.26em 0em 6.26em 2em;
                 /*margin-left:2em;
                 margin-top: 6.26em;*/
                 align-content: center;
-                min-width: 44em;
-                max-width:75.9375em;
-                max-height:129.875em;
+                /*min-width: 44em;
+                max-width: 63.9375em;*/
+                max-height:100%;
                 grid-template-rows: 10% 90%;
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat (auto-fill , minmax(786px, 1fr));
                 }
 
                 .border{       
-                    min-width:44em;
-                    padding:2.5em 0em;
+                    /*min-width:44em;*/
+                    /*padding:2.5em 0em;*/
+                    display:grid;
                     margin-left:2em;
                     justify-self: center;
                 }
@@ -122,19 +123,19 @@
         
                 .capital {
                     display:grid;
-                    min-width:17.375em;
+                    /*max-width:17.375em;*/
                     max-height: 2em;
                     font-size: 1.75em;
                     padding-bottom: 0.875em;
-                    margin:auto;
+                    /*margin:auto;*/
                     text-align: center;
                     justify-self: center;
                 }
 
                 .belowcapital {
                     display:grid;
-                    min-width:35.125em;
-                    min-height: 4.5em;
+                    /*max-width:35.125em;
+                    min-height: 4.5em;*/
                     font-size: 1.125em;
                     margin: 0.875em auto auto auto;
                     text-align: center;
@@ -144,20 +145,19 @@
            .market {
                 display:grid;
                 justify-self: center;
-                min-width: 44em;
-                max-width:75.9375em;
+                /*min-width: 44em;
+                max-width:75.9375em;*/
                 gap:1.5em;
                 grid-template-areas:"veg veg"
                 "veg veg"
                 "veg veg"
                 "veg veg";
                 grid-template-columns:1fr 1fr;
-                margin: auto;
+                margin: 2.5em auto;
+                max-height: 100%;
                                 }
         
-            .none {
-                display: none;
-            }    
+ 
         
             .veg{
                 display:grid;
@@ -168,6 +168,10 @@
                 max-height:29.0625em;
                 padding-bottom: 1.25em;
         }
+
+        .none {
+            display: none;
+        }   
 
         
         .veg__name{
@@ -208,13 +212,17 @@
         }
         }
         
-        @media screen and (min-width: 370px) and (max-width:704px){
+        @media screen and (max-width: 370px){
             .gallery {
                 display:grid;
                 margin:6.26em 0em 0em 2em;
-                align-content: center;
-                min-width:23.4375em;
-                max-width: 44em;
+                /*align-content: center;*/
+                min-width: 20.9375em;
+                max-width: 23.4375em;
+                max-height: 100%;
+                /*min-width:23.4375em;
+                max-width: 43.9375em;*/
+                /*width:100vw;*/
                 grid-template-rows: 10% 90%;
                 grid-template-columns: 1fr;
                 }
@@ -222,32 +230,35 @@
 
         
                 .border{       
-                    min-width: 20.9375em;
-                    max-width: 44em;
-                    padding:2.5em 0px;
-                    margin-left:2em;
+                    display: grid;
+                    /*min-width: 20.9375em;*/
+                    max-width: 23.4375em;
+                    max-height: 100%;
+                    /*width:100vw;*/
+                    padding:2.5em 0em 10em 0em;
+                    /*margin-left:2em;*/
                     justify-self: center;
                 }
 
         
                 .capital {
                     display:grid;
-                    min-width: 15.3125em;
-                    max-width: 44em;
+                    max-width: 15.3125em;
+                    /*max-width: 44em;*/
                     max-height: 1.75em;
                     font-size: 1.5em;
                     padding-bottom:0.875em;
-                    margin:auto;
+                    /*margin:auto;*/
                     text-align: center;
                     justify-self: center;
                 }
 
                 .belowcapital {
                     display:grid;
-                    min-width:20.9375em;
+                    max-width:20.9375em;
                     min-height: 4.5em;
                     font-size: 0.875em;
-                    margin: 0.875em auto auto auto;
+                    margin: 0.875em auto 0em auto;
                     text-align: center;
                     justify-self: center;
                 }
@@ -256,25 +267,29 @@
            .market {
                 display:grid;
                 justify-self: center;
-                min-width:20.9375em;
-                max-width:44em;
+                max-width:20.9375em;
+                /*max-width: 44em;*/
+                max-height: 100%;
+                /*min-width:20.9375em;
+                max-width:44em;*/
                 grid-template-areas:"veg";
                 grid-template-columns: 1fr;
-                margin:auto;
+                /*margin:auto;*/
+                margin-bottom: 10em;
                 }
 
         
-            .veg{
+            .veg {
                 display:grid;
                 grid-template-rows: 25% 7% 52% 15%;
                 border-radius:1.25em;
                 background-color:rgb(234, 247, 229);
-                min-width:20.9375em;
-                min-height:27.6875em;
+                max-width:20.9375em;
+                max-height:27.6875em;
                 padding-bottom: 1.25em;
         }
 
-                .veg__name{
+            .veg__name {
             display:grid;
             font-family: "DM Sans", sans-serif;
             font-style: normal;
@@ -286,8 +301,7 @@
             margin-bottom: 0px;
         }
 
-        /**/
-        
+                
         .veg__subname{
             display:grid;
             font-family: "DM Sans", sans-serif;
