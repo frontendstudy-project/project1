@@ -1,9 +1,8 @@
 @use "../abstracts/variables";
 @use "../base/fonts";
 
-*,
-*::before,
-*::after {
+.header *::before,
+.header *::after {
     box-sizing: border-box;
 }
 
