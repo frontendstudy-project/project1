@@ -53,13 +53,13 @@
               }
             
             .footer__info-address {
-            margin-top: 1.25rem;
-            margin-left: 10rem;
+              margin-top: 1.25rem;
+              margin-left: 4.375rem;
             }
 
             .footer__info-tel {
-              margin-top: 2rem;
-              margin-left: 10rem;
+              margin-top: 1.25rem;
+              margin-left: 3.5rem;
             }
           
           }
@@ -72,11 +72,12 @@
   
 }
 
-@media screen and (min-width: 370px) and (max-width: 900px){
+@media (max-width:700px){
   .footer {
   width: 100%;
   flex-direction: column;
   }
+
 .footer__logo{
   width: 100%;
   margin-left: 7rem;
@@ -85,18 +86,15 @@
   .footer__nav{
     width: 100%;
     margin-top: 2rem;
-  
-  }.footer__info{
-    width: 100%;
+    justify-content:space-between;
   }
+
+
 .footer__info-socials{
   width: 100%;
-}
-.footer__info-address{
-  width: 100%;
-}
-.footer__info-tel{
-  width: 100%;
+  justify-content: space-evenly;
+  .footer__info-tel{
+    width: 100%;
+  }
 }
 }
-
