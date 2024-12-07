@@ -109,13 +109,16 @@ color: rgba(234, 247, 229, 1);
 
 @media screen and (max-width: 1024px) {
 .main {
+display: flex;
 align-items: center;
 flex-direction: column;
 justify-content: center;
-font-family: variables.$font-family; }
+font-family: variables.$font-family;
+}
 
 .container-1 {
 width: 100%;
+margin-left: 15rem;
 }
 .group-of-buttons {
   justify-content: flex-end;
@@ -123,7 +126,10 @@ width: 100%;
 }
 .girl {
   width: auto;
-  margin-right: 500px;
+  margin-right: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-top: 0;
 }
 .title-1 {
   font-size: 2rem; 
@@ -138,6 +144,8 @@ width: 100%;
   }
 .container-2 {
   width: 100%;
+  margin-top: 0;
+  margin-right: 0;
   align-items: flex-start;
   justify-content: center;
   margin-left: 350px;
@@ -162,8 +170,13 @@ width: 100%;
     color: white;
     font-size: 1.5rem;    
   }
+  .circls {
+    width: 45%;
+    }
     .container-1 {
-    width: 100%;
+    width: 90%;
+    margin-left: 3rem;
+    margin-right: 1rem;
   } 
     .container-2 { 
     width: 100%;
