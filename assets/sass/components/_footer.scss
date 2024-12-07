@@ -12,8 +12,11 @@
   font-family: variables.$font-family;
 
         .footer__logo {
-            width: 15%;
-            margin-top: 3rem;
+          max-width: 100%;
+          min-height: 100%;
+          object-fit: contain;
+          justify-content: center;
+          margin-top: 3rem;
         }
 
 
@@ -68,13 +71,12 @@
 
 @media screen and (min-width: 370px) and (max-width: 728px){
   .footer {
-    width: 100%;
+  width: 100%;
   flex-direction: column;
-  margin-left: 5rem;
   }
 .footer__logo{
-  width: 100%;
- align-content: center;
+  width: 100%
+
 }
   .footer__nav{
     width: 100%;
