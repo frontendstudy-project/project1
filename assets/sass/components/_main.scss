@@ -161,6 +161,73 @@ margin-left: 15rem;
   margin-left: 1.5rem;
  }
 }
+@media screen and (max-width: 745px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: variables.$font-family;
+    color: white;
+    font-size: 1.5rem;    
+  }
+  .circls {
+    width: 45%;
+    }
+    .container-1 {
+    width: 90%;
+    margin-left: 3rem;
+    margin-right: 1rem;
+  } 
+    .container-2 { 
+    width: 100%;
+    margin-left: 0;
+      }
+      .girl {
+        width: 100%;
+      }
+      .title-1 {
+        font-size: 1.3rem; 
+      }
+      .title-2 {
+        font-size: 0.8rem;
+      }
+      .group-of-buttons {
+        align-items: center;
+        justify-content: center;
+        padding-left: none;
+        margin-top: none;
+        margin: auto;
+      }
+      .button-oval-1 {
+        font-size: 0.6rem;
+        width: 80px;
+        height: 25px;
+    }
+    
+    .button-oval-2 {
+      font-size: 0.6rem;
+        background-color: rgba(161, 196, 135, 1);
+        width: 80px;
+        height: 25px;
+        }
+    
+    .button-oval-3 {
+      font-size: 0.6rem;
+        background-color: rgba(161, 196, 135, 1);
+        width: 80px;
+        height: 25px;
+        margin-top: 10px;
+    }
+    
+    .button-oval-4 {
+      font-size: 0.6rem;
+        background-color: rgba(161, 196, 135, 1);
+        width: 80px;
+        height: 25px;
+        margin-top: 10px;
+      }
+      
+    }
 @media screen and (max-width: 370px) {
   .main {
     flex-direction: column;
