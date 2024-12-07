@@ -1,5 +1,5 @@
-# project1
-Project for itgirlschool
+# project 1
+Project for itgirlschool https://frontendstudy-project.github.io/project1/
 # Учебный проект "Магазин свежих овощей"
 
 Учебный проект сайта для магазина по продаже свежих овощей. Реализован с использованием **HTML** и **SASS**.
