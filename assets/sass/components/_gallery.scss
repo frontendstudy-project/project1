@@ -1,47 +1,52 @@
 @use "../abstracts/mixin";
 @use "../base/fonts";
-
 .gallery {
     display:grid;
-    justify-items: stretch;
-        /*margin:6.26em auto 2.5em auto;*/
-    width:100%;
+    margin:6.26em auto 2.5em auto;
+    min-width:75.9375em;
     min-height:100.875em;
     grid-template-rows: 10% 90%;
     grid-template-columns: 1fr;
+    /*padding-left: 2em;
+    padding-right: 2em;*/
+    overflow-x: hidden;
     }
+
     .border{
         height:auto;
         padding-bottom: 2.5em;
-    }
+        justify-self: center;
+            }
     .capital {
         display:grid;
-        width:51%;
+        max-width:51%;
         max-height: 2.75em;
         font-family:"DM Sans", sans-serif;
         font-size: 2.5em;
-        /*margin:auto;*/
+        margin:auto;
         text-align: center;
+        justify-self: center;
     }
     .belowcapital {
         display:grid;
-        width: 46%;
+        max-width: 46%;
         max-height: 4.5em;
         font-family: "DM Sans", sans-serif;
         font-size: 1.125em;
-        /*margin: 0.875em auto auto auto;*/
+        margin: 0.875em auto auto auto;
         text-align: center;
+        justify-self: center;
     }
 
     .market {
         display:grid;
-        justify-items: stretch;
+        justify-self: center;
         grid-template-columns: 1fr 1fr 1fr;
         gap:1.5em;
-        width:100%;
-        padding-left: 2em;
-        padding-right: 2em;
-        /*margin:auto;*/
+        max-width:1215em;
+        /*padding-left: 2em;
+        padding-right: 2em;*/
+        margin:auto;
     }
 
     .veg{
@@ -96,42 +101,59 @@
         @media screen and (max-width: 1024px){
             .gallery {
                 display:grid;
-                margin-left:2em;
-                margin-top: 6.26em;
+                margin:6.26em 0em 0em 2em;
+                /*margin-left:2em;
+                margin-top: 6.26em;*/
                 align-content: center;
-                max-width:100vw;
+                min-width: 44em;
+                max-width:75.9375em;
                 max-height:129.875em;
                 grid-template-rows: 10% 90%;
+                grid-template-columns: 1fr;
                 }
-        
+
                 .border{       
-                    min-width:100%;
+                    min-width:44em;
                     padding:2.5em 0em;
                     margin-left:2em;
+                    justify-self: center;
                 }
+
         
                 .capital {
+                    display:grid;
                     min-width:17.375em;
-                    min-height: 2em;
+                    max-height: 2em;
                     font-size: 1.75em;
                     padding-bottom: 0.875em;
+                    margin:auto;
+                    text-align: center;
+                    justify-self: center;
                 }
+
                 .belowcapital {
+                    display:grid;
                     min-width:35.125em;
                     min-height: 4.5em;
                     font-size: 1.125em;
+                    margin: 0.875em auto auto auto;
+                    text-align: center;
+                    justify-self: center;
                 }
         
            .market {
                 display:grid;
-                width:44em;
+                justify-self: center;
+                min-width: 44em;
+                max-width:75.9375em;
+                gap:1.5em;
                 grid-template-areas:"veg veg"
                 "veg veg"
                 "veg veg"
                 "veg veg";
                 grid-template-columns:1fr 1fr;
-                margin-top: 2%;
-                }
+                margin: auto;
+                                }
         
             .none {
                 display: none;
@@ -142,10 +164,11 @@
                 grid-template-rows: 25% 7% 52% 15%;
                 border-radius:1.25em;
                 background-color:rgb(234, 247, 229);
-                width:342px;
-                height:465px;
+                max-width:21.375em;
+                max-height:29.0625em;
                 padding-bottom: 1.25em;
         }
+
         
         .veg__name{
             display:grid;
@@ -155,8 +178,7 @@
             padding-left:24px;
             font-size: 28px;
             font-weight: bold;
-        
-            padding-top:64px;
+                    padding-top:64px;
             margin-bottom: 0px;
         }
         
@@ -186,51 +208,73 @@
         }
         }
         
-        @media screen and (max-width: 370px){
+        @media screen and (min-width: 370px) and (max-width:704px){
             .gallery {
                 display:grid;
-                margin:auto;
+                margin:6.26em 0em 0em 2em;
                 align-content: center;
-                width:375px;
+                min-width:23.4375em;
+                max-width: 44em;
                 grid-template-rows: 10% 90%;
+                grid-template-columns: 1fr;
                 }
+
+
         
                 .border{       
-                    width:335px;
+                    min-width: 20.9375em;
+                    max-width: 44em;
                     padding:2.5em 0px;
-                    margin:auto;
+                    margin-left:2em;
+                    justify-self: center;
                 }
+
         
                 .capital {
-                    width:80%;
-                    height:auto;
+                    display:grid;
+                    min-width: 15.3125em;
+                    max-width: 44em;
+                    max-height: 1.75em;
                     font-size: 1.5em;
                     padding-bottom:0.875em;
+                    margin:auto;
+                    text-align: center;
+                    justify-self: center;
                 }
+
                 .belowcapital {
-                    width: 100%;
-                    height: auto;
+                    display:grid;
+                    min-width:20.9375em;
+                    min-height: 4.5em;
                     font-size: 0.875em;
+                    margin: 0.875em auto auto auto;
+                    text-align: center;
+                    justify-self: center;
                 }
+
         
            .market {
                 display:grid;
-                width:335px;
+                justify-self: center;
+                min-width:20.9375em;
+                max-width:44em;
                 grid-template-areas:"veg";
-                grid-template-columns: 100%;
+                grid-template-columns: 1fr;
+                margin:auto;
                 }
+
         
             .veg{
                 display:grid;
                 grid-template-rows: 25% 7% 52% 15%;
                 border-radius:1.25em;
                 background-color:rgb(234, 247, 229);
-                width:335px;
-                height:443px;
+                min-width:20.9375em;
+                min-height:27.6875em;
                 padding-bottom: 1.25em;
         }
-        
-        .veg__name{
+
+                .veg__name{
             display:grid;
             font-family: "DM Sans", sans-serif;
             font-style: normal;
@@ -241,6 +285,8 @@
             padding-top:2.5em;
             margin-bottom: 0px;
         }
+
+        /**/
         
         .veg__subname{
             display:grid;
@@ -267,3 +313,4 @@
             padding-top:1.375em;
         }
         }
+        
