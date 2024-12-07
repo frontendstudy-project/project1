@@ -9,7 +9,7 @@
   padding-top: 4vw;
   padding-bottom: 2vw;
   font-family: variables.$font-family;
-justify-content: space-around;
+  justify-content: space-around;
 }
 
 .italic {
@@ -32,8 +32,11 @@ justify-content: space-around;
   margin-right: 1vw;
   align-items: flex-end;
   margin-left: 10%;
+  justify-content: flex-end;
   }
-
+ .girl {
+  margin-top: 10vw; 
+ }
 .button-round {
   background-color: rgba(250, 243, 231, 1);
   font-family: variables.$font-family;
@@ -46,7 +49,10 @@ justify-content: space-around;
   border-color: rgba(250, 243, 231, 1);
   margin-top: 1vw;
   margin-bottom: 50px;
-    }
+  }
+.button-shop {
+  transform: rotate(-15deg);
+}
 
 .button-oval {
     border: solid white 1px;
